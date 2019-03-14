@@ -1,0 +1,21 @@
+@media screen and (max-width: 992px) {
+
+    .slide-txt {
+        width: 60%;
+        left: 20%;
+    }
+
+    #textdiv, #imgdiv {
+        position: static;
+        width: 100%;
+    }
+
+    #textdiv {
+        padding: 50px 100px;
+    }
+
+    #imgdiv {
+        height: 80%;
+    }
+
+}
