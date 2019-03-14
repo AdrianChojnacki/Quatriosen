@@ -1,20 +1,34 @@
-body {
-    background: white !important;
+html, body {
+    position: relative;
+    height: 100%;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background: #fff;
+    font-size: 14px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/*-------------------------------------------------------------------------------------------------------------- LOGO */
 
 #logo {
     position: fixed;
     top: 25px;
-    width: 80%;
     left: 10%;
+    width: 80%;
     height: 75px;
     z-index: 1;
 }
 
 #logo img {
-    height: 100%;
     width: auto;
+    height: 100%;
 }
+
+/*------------------------------------------------------------------------------------------------------- MENU & LANG */
 
 #menu, #lang {
     position: fixed;
@@ -23,26 +37,55 @@ body {
     z-index: 1;
 }
 
-#menu
-{
+#menu {
     left: 5px;
 }
 
+#lang {
+    right: 5px;
+}
+
 #menu a, #lang a {
+    display: block;
     width: 47px;
     height: 47px;
-    overflow: hidden;
-    display: block;
     background-position: center right;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; ------------------------------------------------ Wygląda na to, że niepotrzebne. */
+    overflow: hidden;
 }
 
 #menu a {
     margin-top: 7px;
 }
 
-#menu a:first-child {
+#menu a:nth-child(1) {
     margin-top: 0;
+    background-image: url("../img/home.png");
+}
+
+#menu a:nth-child(2) {
+    background-image: url("../img/aboutus.png");
+}
+
+#menu a:nth-child(3) {
+    background-image: url("../img/airplane.png");
+}
+
+#menu a:nth-child(4) {
+    background-image: url("../img/iletter.png");
+}
+
+#menu a:nth-child(5) {
+    background-image: url("../img/postcard.png");
+}
+
+#lang a:nth-child(1) {
+    margin-bottom: 14px;
+    background-image: url("../img/eng.png");
+}
+
+#lang a:nth-child(2) {
+    background-image: url("../img/pl.png");
 }
 
 #menu a:hover, #lang a:hover {
@@ -53,102 +96,14 @@ body {
     background-position: center left;
 }
 
-#lang {
-    right: 5px;
-}
+/*------------------------------------------------------------------------------------------------------------ SWIPER */
 
-#lang a:first-child {
-    margin-bottom: 14px;
-}
-
-#textdiv {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    min-height: 100%;
-    padding: 150px 200px 150px 50px;
-    box-sizing: border-box;
-}
-
-#imgdiv {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-size: cover;
-}
-
-#slider {
+#swiper {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-.h1 {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 25px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    color: white;
-}
-
-.h1-2 {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 25px;
-    margin: 0;
-    padding: 0;
-    color: #666666;
-}
-
-.h2 {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 25px;
-    color: #ebb115;
-}
-
-.p {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 14px;
-    color: white;
-}
-
-.p2 {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 14px;
-    color: #666666;
-}
-
-.uly {
-    padding-left: 1.4em;
-}
-
-.uly li {
-    color: #f7b607;
-}
-
-.uly span {
-    color: #666666;
-}
-
-html, body {
-    position: relative;
-    height: 100%;
-}
-
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color:#000;
-    margin: 0;
-    padding: 0;
 }
 
 .swiper-container {
@@ -157,9 +112,6 @@ body {
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -173,22 +125,58 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    background: #fff;
+    font-size: 18px;
+    text-align: center;
 }
 
-.slide-img, .slide-txt {
+.swiper-image, .swiper-text {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
 }
 
-.slide-txt {
-    width: 40%;
-    left: 30%;
+.swiper-image-1 {
+    background-image: url("../img/swiper1.jpg");
+}
+
+.swiper-image-2 {
+    background-image: url("../img/swiper2.jpg");
+}
+
+.swiper-image-3 {
+    background-image: url("../img/swiper3.jpg");
+}
+
+.swiper-text {
     top: 130px;
+    left: 30%;
+    width: 40%;
+}
+
+#swiper h1 {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#swiper h2, #text-div h2 { /*--------------------------------------------------------------- "#text-div h2" from PAGES*/
+    margin: 0 0 25px;
+    padding: 0;
+    color: #ebb115;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#swiper p {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .swiper-button-next {
@@ -202,22 +190,78 @@ body {
 }
 
 .swiper-button-next, .swiper-button-prev {
-    bottom: 5%;
     top: auto;
-    background-size: contain;
+    bottom: 5%;
     width: 47px;
     height: 47px;
+    background-size: contain;
 }
 
-#slider .swiper-container .swiper-pagination {
-    bottom: 5%;
+#swiper .swiper-container .swiper-pagination {
     top: auto;
+    bottom: 5%;
     height: 47px;
 }
 
-#slider .swiper-container .swiper-pagination .swiper-pagination-bullet {
+#swiper .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
     margin-top: 18px;
     background: #ebb115;
-    height: 12px;
-    width: 12px;
+}
+
+/*------------------------------------------------------------------------------------------------------------- PAGES */
+
+#text-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    min-height: 100%;
+    padding: 150px 200px 150px 50px;
+}
+
+#image-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+}
+
+#text-div h1 {
+    margin: 0;
+    padding: 0;
+    color: #666;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#text-div p, #text-div ul {
+    color: #666;
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#text-div ul {
+    padding-left: 1.4em;
+    list-style: none;
+}
+
+#text-div ul li {
+    color: #666;
+}
+
+#text-div ul li::before {
+    content: "";
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+    margin-left: -16px;
+    background: #f7b607;
+    border-radius: 50%;
 }

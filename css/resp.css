@@ -1,20 +1,20 @@
 @media screen and (max-width: 992px) {
 
-    .slide-txt {
+    .swiper-text {
         width: 60%;
         left: 20%;
     }
 
-    #textdiv, #imgdiv {
+    #text-div, #image-div {
         position: static;
         width: 100%;
     }
 
-    #textdiv {
+    #text-div {
         padding: 50px 100px;
     }
 
-    #imgdiv {
+    #image-div {
         height: 80%;
     }
 
