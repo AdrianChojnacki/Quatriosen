@@ -12,6 +12,10 @@ body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+#logo-mobile, #logo-mobile img, #menu-mobile, #lang-mobile {
+    display: none;
+}
+
 /*-------------------------------------------------------------------------------------------------------------- LOGO */
 
 #logo {
