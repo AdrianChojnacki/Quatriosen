@@ -102,6 +102,18 @@
 
     /*-------------------------------------------------------------------------------------------------------- SWIPER */
 
+    .swiper-image-1 {
+        background-image: url("../img/swiper1-mobile.jpg");
+    }
+
+    .swiper-image-2 {
+        background-image: url("../img/swiper2-mobile.jpg");
+    }
+
+    .swiper-image-3 {
+        background-image: url("../img/swiper3-mobile.jpg");
+    }
+
     .swiper-text {
         width: 60%;
         left: 20%;
@@ -116,6 +128,22 @@
 
     #image-div {
         height: 60%;
+    }
+
+    .image-div-1 {
+        background-image: url('../img/page1-mobile.jpg');
+    }
+
+    .image-div-2 {
+        background-image: url('../img/page2-mobile.jpg');
+    }
+
+    .image-div-3 {
+        background-image: url('../img/page3-mobile.jpg');
+    }
+
+    .image-div-4 {
+        background-image: url('../img/page4-mobile.jpg');
     }
 
     #text-div {
