@@ -161,6 +161,10 @@ body {
     width: 40%;
 }
 
+#swiper h1, #swiper h2, #text-div h1, #text-div h2 { /*------------- "#text-div h1, #text-div h2" from PAGES*/
+    font-weight: bold;
+}
+
 #swiper h1 {
     margin-bottom: 0;
     color: #fff;
@@ -168,7 +172,7 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
-#swiper h2, #text-div h2 { /*--------------------------------------------------------------- "#text-div h2" from PAGES*/
+#swiper h2, #text-div h2 { /*----------------------------------------------------- "#text-div h2" from PAGES*/
     margin: 0 0 25px;
     padding: 0;
     color: #ebb115;
@@ -215,15 +219,6 @@ body {
 
 /*------------------------------------------------------------------------------------------------------------- PAGES */
 
-#text-div {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    min-height: 100%;
-    padding: 150px 200px 150px 50px;
-}
-
 #image-div {
     position: fixed;
     top: 0;
@@ -231,6 +226,39 @@ body {
     width: 50%;
     height: 100%;
     background-size: cover;
+}
+
+.image-div-1 {
+    background-image: url('../img/page1.jpg');
+}
+
+.image-div-2 {
+    background-image: url('../img/page2.jpg');
+}
+
+.image-div-3 {
+    background-image: url('../img/page3.jpg');
+}
+
+.image-div-4 {
+    background-image: url('../img/page4.jpg');
+}
+
+#text-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    /* flex-direction: column; */
+    width: 50%;
+    min-height: 100%;
+    padding: 100px 200px 200px 50px;
+}
+
+.text-box {
+    width: auto;
+    height: auto;
+    margin: auto;
 }
 
 #text-div h1 {

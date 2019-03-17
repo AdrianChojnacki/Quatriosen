@@ -1,3 +1,11 @@
+@media screen and (max-height: 900px) {
+
+    #text-div {
+        padding: 100px 200px 100px 50px;
+    }
+
+}
+
 @media screen and (max-width: 992px) {
 
     #logo, #menu, #lang {
@@ -31,7 +39,7 @@
         z-index: 1;
     }
 
-    #menu-mobile .btn:focus, #lang-mobile .btn:focus {
+    #menu-mobile .btn:focus, #lang-mobile .btn:focus { /*------- "#lang-mobile .btn:focus" from LANG MOBILE */
         box-shadow: 0 0 0 0.2rem #ebb115;
     }
 
@@ -99,19 +107,19 @@
         left: 20%;
     }
 
-    /*---------------------------------------------------------------------------------------------- SUBPAGES CONTENT */
+    /*--------------------------------------------------------------------------------------------------------- PAGES */
 
     #text-div, #image-div {
         position: static;
         width: 100%;
     }
 
-    #text-div {
-        padding: 50px 100px;
+    #image-div {
+        height: 60%;
     }
 
-    #image-div {
-        height: 80%;
+    #text-div {
+        padding: 50px 50px;
     }
 
 }
