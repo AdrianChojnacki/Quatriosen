@@ -151,7 +151,11 @@
     }
 
     #text-div {
-        padding: 50px 50px;
+        padding: 50px 25px;
+    }
+
+    .text-box {
+        margin: 0;
     }
 
 }
