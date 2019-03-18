@@ -74,29 +74,32 @@
         top: 8px;
         right: 16px;
         display: block;
-        font-size: 18px;
         font-family: 'Titillium Web', sans-serif;
         z-index: 2;
     }
 
     #dropdownMenuButton {
+        padding: 7px 12px;
         color: #fff;
         background-color: #ffc107;
         border-color: #fff;
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Titillium Web', sans-serif;
     }
 
     #lang-mobile .dropdown-menu {
+        min-width: 50px !important;
         background-color: #ffc107;
         border-color: #fff;
+        transform: translate3d(-23px, 46px, 0) !important;
     }
 
     #lang-mobile .dropdown-item {
         color: #fff;
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Titillium Web', sans-serif;
         font-weight: bold;
+        text-align: left;
     }
 
     #lang-mobile .dropdown-item:hover {
