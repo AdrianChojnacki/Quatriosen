@@ -1,6 +1,6 @@
 @media screen and (max-height: 900px) {
 
-    #text-div {
+    #page-text {
         padding: 100px 200px 100px 50px;
     }
 
@@ -128,36 +128,36 @@
 
     /*--------------------------------------------------------------------------------------------------------- PAGES */
 
-    #text-div, #image-div {
+    #page-text, #page-image {
         position: static;
         width: 100%;
     }
 
-    #image-div {
+    #page-image {
         height: 60%;
     }
 
-    .image-div-1 {
+    .page-image-1 {
         background-image: url('../img/page1-mobile.jpg');
     }
 
-    .image-div-2 {
+    .page-image-2 {
         background-image: url('../img/page2-mobile.jpg');
     }
 
-    .image-div-3 {
+    .page-image-3 {
         background-image: url('../img/page3-mobile.jpg');
     }
 
-    .image-div-4 {
+    .page-image-4 {
         background-image: url('../img/page4-mobile.jpg');
     }
 
-    #text-div {
+    #page-text {
         padding: 50px 25px;
     }
 
-    .text-box {
+    .page-text-box {
         margin: 0;
     }
 
